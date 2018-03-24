@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private String strfirstname, strlastname;
     private Button sign_in_register;
     private RequestQueue requestQueue;
-    private static final String URL = "http://localhost/androidPHP2/connection.php";
+    private static final String URL = "http://localhost/connection.php";
     private StringRequest request;
 
     @Override
