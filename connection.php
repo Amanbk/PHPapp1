@@ -16,7 +16,7 @@ if ((!empty(firstname))&& (!empty(lastname))){
     $password = "";
 
     //1 creating database
-    $sql = "CREATE DATABASE phpapp1";
+    $sql = "CREATE DATABASE IF NOT EXISTS phpapp1";
     if (mysqli_query($conn, $sql)) {
       
     }else {
@@ -25,7 +25,7 @@ if ((!empty(firstname))&& (!empty(lastname))){
 
   
     //2 creating table
-    $sql2 = "CREATE TABLE users (
+    $sql2 = "CREATE TABLE IF NOT EXISTS users (
     id INT(3) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
     firstname VARCHAR(30) NOT NULL,
     lastname VARCHAR(30) NOT NULL,
